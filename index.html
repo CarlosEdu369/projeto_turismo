@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MadeiraTrips</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      MadeiraTrips
+    </div>
+
+    <nav class="nav">
+      <a href="#">Início</a>
+      <a href="#">Lugares</a>
+      <a href="#">Experiências</a>
+      <a href="#">Inspiração</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <!-- LAYOUT PRINCIPAL -->
+  <main class="layout">
+
+    <!-- MENU LATERAL -->
+    <aside class="menu">
+      <details open>
+        <summary>Geral</summary>
+        <a href="#">Dashboard</a>
+        <a href="#">Preferências</a>
+        <a href="#">Dados Pessoais</a>
+      </details>
+
+      <details>
+        <summary>Lugares</summary>
+        <a href="#">Costa Norte</a>
+        <a href="#">Costa Sul</a>
+        <a href="#">Porto Santo</a>
+      </details>
+
+      <details>
+        <summary>Experiências</summary>
+        <a href="#">Caminhadas</a>
+        <a href="#">Gastronomia</a>
+        <a href="#">Cultura</a>
+      </details>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <section class="content">
+
+      <h1>Descobre a Madeira</h1>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <h3>Levada do Caldeirão Verde</h3>
+          <p>Caminhada guiada por levadas históricas.</p>
+        </article>
+
+        <article class="card">
+          <h3>Observação de Golfinhos</h3>
+          <p>Experiência única no oceano Atlântico.</p>
+        </article>
+
+        <article class="card">
+          <h3>Tour Gastronómico</h3>
+          <p>Sabores tradicionais da ilha.</p>
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <nav>
+      <a href="#">Sobre</a>
+      <a href="#">Contactos</a>
+      <a href="#">Ajuda</a>
+    </nav>
+    <p>© 2026 MadeiraTrips</p>
+  </footer>
+
+</body>
+<style>
+    /* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GRID PRINCIPAL */
+.layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
+}
+.menu {
+  background-color: rgb(58, 124, 58);
+  color: white;
+  padding: 1rem;
+}
+
+.menu details {
+  margin-bottom: 1rem;
+}
+
+.menu summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu a {
+  display: block;
+  margin: 0.3rem 0;
+  text-decoration: none;
+  color: white;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+</style>
+</html>
