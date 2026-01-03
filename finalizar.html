@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar Roteiro - MadeiraTrips</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">MadeiraTrips</div>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="carrinho.html">Carrinho</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+
+    <aside class="menu">
+      <details open>
+        <summary>Carrinho</summary>
+        <a href="carrinho.html">Lista de Artigos</a>
+      </details>
+    </aside>
+
+    <section class="content">
+      <h1>Finalizar Roteiro</h1>
+
+      <p>Total de itens selecionados: 2</p>
+      <p>Valor total: 40€</p>
+
+      <form>
+        <label>Nome:</label><br>
+        <input type="text"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email"><br><br>
+
+        <label>Método de pagamento:</label><br>
+        <select>
+          <option>Cartão</option>
+          <option>MB Way</option>
+          <option>PayPal</option>
+        </select><br><br>
+
+        <button>Confirmar Reserva</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 MadeiraTrips</p>
+  </footer>
+
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: var(--background-color);
+        color:var(--text-color);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .layout {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        min-height: 100vh;
+    }
+
+    .menu {
+        background-color: var(--cor-secundaria);
+        color: white;
+        padding: 1rem;
+    }
+
+    .menu details {
+        margin-bottom: 1rem;
+    }
+
+    .menu summary {
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .menu a {
+        display: block;
+        margin: 0.6rem;
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .content {
+        padding: 2rem;
+        background-color: lightgrey;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .card {
+        background-color: var(--card-background);
+        padding: 1rem;
+        border-radius: 10px;
+        margin:0.3rem;
+    }
+
+
+    .header {
+        background-color: var(--cor-primaria);
+        color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+    .nav a:hover {
+        text-decoration: underline;
+    }
+
+    .footer {
+        background-color: var(--cor-primaria);
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* dark/light mode */
+    :root {
+        --background-color: white;
+        --text-color: black;
+        --cor-primaria: #2f5d2a;
+        --cor-secundaria: #407837;
+        --card-background: white;
+    }
+
+    body.dark {
+        --background-color: #524f4f;
+        --text-color: white;
+        --cor-primaria: #1b3b1a;
+        --cor-secundaria: #2f5d2a;
+        --card-background: yellow;
+    }
+
+    @media (width <= 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    order: 2;
+  }
+
+  .content {
+    order: 1;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+</style>
+</html>

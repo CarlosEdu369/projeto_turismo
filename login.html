@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login e registar</title>
+</head>
+
+<body>
+    <div class="autenticar">
+        <h2>Login</h2>
+        <form>
+            <label>Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Email@exemplo.com">
+
+            <label>Password:</label>
+            <input type="password" id="password" name="password" required minlength="6"
+                placeholder="Mínimo 6 caracteres">
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <hr>
+
+        <h2>Registo</h2>
+        <form>
+            <label>Email:</label>
+            <input type="email" id="new-email" name="new-email" required placeholder="Email@exemplo.com">
+
+            <label>Password:</label>
+            <input type="password" id="new-password" name="new-password" required minlength="6"
+                placeholder="Mínimo 6 caracteres">
+
+            <label>Confirmar Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required minlength="6"
+                placeholder="Reescreve a password">
+
+            <button type="submit">Registar</button>
+        </form>
+    </div>
+
+</body>
+<style>
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: var(--cor-secundaria);
+        }
+
+        .autenticar {
+            background-color: var(--cor-primaria);
+            color: var(--cor-secundaria);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .autenticar {
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 400px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: var(--cor-primaria);
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .autenticar h2 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .autenticar form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .autenticar label {
+        font-weight: bold;
+    }
+
+    .autenticar input {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .autenticar input:focus {
+        outline: none;
+    }
+
+    .autenticar input:valid {
+        border-color: var(--cor-valida);
+    }
+
+    .autenticar input:invalid {
+        border-color: var(--cor-invalida);
+    }
+
+    .autenticar button {
+        background-color: var(--cor-secundaria);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .autenticar button:hover {
+        background-color: var(--cor-primaria);
+        color: black;
+        border: solid, 1px, var(--cor-secundaria);
+    }
+
+    :root {
+        --cor-primaria: white;
+        --cor-valida: rgb(53, 194, 53);
+        --cor-invalida: red;
+        --cor-secundaria: black;
+    }
+</style>
+
+</html>

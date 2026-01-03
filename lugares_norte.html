@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiências - MadeiraTrips</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">MadeiraTrips</div>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="experiencias.html">Experiências</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <aside class="menu">
+      <details>
+  <summary>Lugares</summary>
+  <a href="lugares_norte.html">Costa Norte</a>
+  <a href="lugares_sul.html">Costa Sul</a>
+  <a href="lugares_porto_santo.html">Porto Santo</a>
+  <a href="lugares_capital.html">Capital</a>
+</details>
+    </aside>
+
+    <section class="content detalhe-experiencia">
+  <h1>Lugares - Costa Norte</h1>
+
+<div class="card-grid">
+  <article class="card">
+    <h3>Levada do Caldeirão Verde</h3>
+    <p>Trilho emblemático da Costa Norte.</p>
+    <a href="detalhe_caldeirao.html">Ver detalhes</a>
+  </article>
+
+  <article class="card">
+    <h3>Santana</h3>
+    <p>Casas típicas tradicionais.</p>
+    <a href="detalhe_santana.html">Ver detalhes</a>
+  </article>
+
+  <article class="card">
+    <h3>Queimadas</h3>
+    <p>Parque florestal natural.</p>
+    <a href="detalhe_queimadas.html">Ver detalhes</a>
+  </article>
+</div>
+
+  <a href="experiencias.html" class="btn-voltar">Voltar às experiencias</a>
+</section>
+  </main>
+
+  <footer class="footer">
+    <nav>
+      <a href="sobre.html">Sobre</a>
+      <a href="contactos.html">Contactos</a>
+      <a href="ajuda.html">Ajuda</a>
+    </nav>
+    <p>© 2026 MadeiraTrips</p>
+  </footer>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: var(--background-color);
+        color:var(--text-color);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .layout {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        min-height: 100vh;
+    }
+
+    .menu {
+        background-color: var(--cor-secundaria);
+        color: white;
+        padding: 1rem;
+    }
+
+    .menu details {
+        margin-bottom: 1rem;
+    }
+
+    .menu summary {
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .menu a {
+        display: block;
+        margin: 0.6rem;
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .content {
+        padding: 2rem;
+        background-color: lightgrey;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .card {
+        background-color: var(--card-background);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+
+    .header {
+        background-color: var(--cor-primaria);
+        color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+    .nav a:hover {
+        text-decoration: underline;
+    }
+
+    .footer {
+        background-color: var(--cor-primaria);
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* dark/light mode */
+    :root {
+        --background-color: white;
+        --text-color: black;
+        --cor-primaria: #2f5d2a;
+        --cor-secundaria: #407837;
+        --card-background: white;
+    }
+
+    body.dark {
+        --background-color: #524f4f;
+        --text-color: white;
+        --cor-primaria: #1b3b1a;
+        --cor-secundaria: #2f5d2a;
+        --card-background: yellow;
+    }
+
+    @media (width <= 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    order: 2;
+  }
+
+  .content {
+    order: 1;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+</style>
+</html>

@@ -1,149 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MadeiraTrips</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadeiraTrips - Esperiências Turísticas na Madeira</title>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="logo">
-      MadeiraTrips
-    </div>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            MadeiraTrips
+        </div>
 
-    <nav class="nav">
-      <a href="#">Início</a>
-      <a href="#">Lugares</a>
-      <a href="#">Experiências</a>
-      <a href="#">Inspiração</a>
-      <a href="#">Login</a>
-    </nav>
-  </header>
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="lista.html">Lugares</a>
+            <a href="experiencias.html">Experiências</a>
+            <a href="#">Inspiração</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
 
-  <!-- LAYOUT PRINCIPAL -->
-  <main class="layout">
+    <!-- LAYOUT PRINCIPAL -->
+    <main class="layout">
 
-    <!-- MENU LATERAL -->
-    <aside class="menu">
-      <details open>
-        <summary>Geral</summary>
-        <a href="#">Dashboard</a>
-        <a href="#">Preferências</a>
-        <a href="#">Dados Pessoais</a>
-      </details>
+        <!-- MENU LATERAL -->
+        <div class="menu">
+            <details open>
+                <summary>Geral</summary>
+                <a href="#">Dashboard</a>
+                <a href="#">Preferências</a>
+                <a href="#">Dados Pessoais</a>
+            </details>
 
-      <details>
-        <summary>Lugares</summary>
-        <a href="#">Costa Norte</a>
-        <a href="#">Costa Sul</a>
-        <a href="#">Porto Santo</a>
-      </details>
+            <details>
+                <summary>Lugares</summary>
+                <a href="lugares_norte.html">Costa Norte</a>
+                <a href="lugares_sul.html">Costa Sul</a>
+                <a href="lugares_porto_santo.html">Porto Santo</a>
+                <a href="lugares_capital.html">Capital</a>
+            </details>
 
-      <details>
-        <summary>Experiências</summary>
-        <a href="#">Caminhadas</a>
-        <a href="#">Gastronomia</a>
-        <a href="#">Cultura</a>
-      </details>
-    </aside>
+            <details>
+                <summary>Experiências</summary>
+                <a href="#">Caminhadas</a>
+                <a href="#">Gastronomia</a>
+                <a href="#">Cultura</a>
+            </details>
+        </div>
 
-    <!-- CONTEÚDO -->
-    <section class="content">
+        <!-- CONTEÚDO -->
+        <div class="content">
 
-      <h1>Descobre a Madeira</h1>
+            <h1>Descobre a Madeira</h1>
 
-      <div class="card-grid">
+            <div class="card-grid">
 
-        <article class="card">
-          <h3>Levada do Caldeirão Verde</h3>
-          <p>Caminhada guiada por levadas históricas.</p>
-        </article>
+                <article class="card">
+                    <h3>Levada do Caldeirão Verde</h3>
+                    <p>Caminhada guiada por levadas históricas.</p>
+                </article>
 
-        <article class="card">
-          <h3>Observação de Golfinhos</h3>
-          <p>Experiência única no oceano Atlântico.</p>
-        </article>
+                <article class="card">
+                    <h3>Observação de Golfinhos</h3>
+                    <p>Experiência única no oceano Atlântico.</p>
+                </article>
 
-        <article class="card">
-          <h3>Tour Gastronómico</h3>
-          <p>Sabores tradicionais da ilha.</p>
-        </article>
+                <article class="card">
+                    <h3>Tour Gastronómico</h3>
+                    <p>Sabores tradicionais da ilha.</p>
+                </article>
 
-      </div>
+            </div>
 
-    </section>
+        </div>
 
-  </main>
+    </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <nav>
-      <a href="#">Sobre</a>
-      <a href="#">Contactos</a>
-      <a href="#">Ajuda</a>
-    </nav>
-    <p>© 2026 MadeiraTrips</p>
-  </footer>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <nav>
+            <a href="#">Sobre</a>
+            <a href="#">Contactos</a>
+            <a href="#">Ajuda</a>
+        </nav>
+        <p>@ 2026 MadeiraTrips</p>
+    </footer>
 
 </body>
 <style>
-    /* RESET BÁSICO */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-/* GRID PRINCIPAL */
-.layout {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  min-height: 100vh;
-}
-.menu {
-  background-color: rgb(58, 124, 58);
-  color: white;
-  padding: 1rem;
-}
+    body{
+        background-color: var(--background-color);
+        color:var(--text-color);
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-.menu details {
-  margin-bottom: 1rem;
-}
+    .layout {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        min-height: 100vh;
+    }
 
-.menu summary {
-  cursor: pointer;
-  font-weight: bold;
-}
+    .menu {
+        background-color: var(--cor-secundaria);
+        color: white;
+        padding: 1rem;
+    }
 
-.menu a {
-  display: block;
-  margin: 0.3rem 0;
-  text-decoration: none;
-  color: white;
-}
+    .menu details {
+        margin-bottom: 1rem;
+    }
 
-.menu a:hover {
-  text-decoration: underline;
-}
+    .menu summary {
+        cursor: pointer;
+        font-weight: bold;
+    }
 
-.content {
-  padding: 2rem;
-  background-color: #f4f4f4;
-}
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
+    .menu a {
+        display: block;
+        margin: 0.6rem;
+        text-decoration: none;
+        color: white;
+    }
 
-.card {
-  background-color: white;
-  padding: 1rem;
-  border-radius: 8px;
+    .menu a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .content {
+        padding: 2rem;
+        background-color: lightgrey;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .card {
+        background-color: var(--card-background);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+
+    .header {
+        background-color: var(--cor-primaria);
+        color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+    .nav a:hover {
+        text-decoration: underline;
+    }
+
+    .footer {
+        background-color: var(--cor-primaria);
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* dark/light mode */
+    :root {
+        --background-color: white;
+        --text-color: black;
+        --cor-primaria: #2f5d2a;
+        --cor-secundaria: #407837;
+        --card-background: white;
+    }
+
+    body.dark {
+        --background-color: #524f4f;
+        --text-color: white;
+        --cor-primaria: #1b3b1a;
+        --cor-secundaria: #2f5d2a;
+        --card-background: yellow;
+    }
+
+    @media (width <= 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    order: 2;
+  }
+
+  .content {
+    order: 1;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    display: none;
+  }
 }
 </style>
+
 </html>

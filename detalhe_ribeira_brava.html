@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhe do Lugar - MadeiraTrips</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">MadeiraTrips</div>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="experiencias.html">Experiências</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <aside class="menu">
+      <details open>
+        <summary>Lugares</summary>
+        <a href="lugares-costa-norte.html">Costa Norte</a>
+        <a href="lugares-costa-sul.html">Costa Sul</a>
+        <a href="lugares-capital.html">Capital</a>
+        <a href="lugares-porto-santo.html">Porto Santo</a>
+      </details>
+    </aside>
+
+    <section class="content">
+      <h1>Ribeira Brava</h1>
+
+<p><strong>Destaques:</strong> praia, igreja histórica, costa</p>
+
+<p>
+  A Ribeira Brava é uma vila costeira com forte ligação ao mar e ao património
+  religioso, destacando-se pela sua igreja histórica.
+</p>
+
+<ul>
+  <li>Localização: Costa Sul</li>
+  <li>Zona urbana</li>
+  <li>Igreja histórica</li>
+  <li>Fácil acesso</li>
+</ul>
+
+      <div class="acoes">
+        <button>Adicionar aos Favoritos</button>
+        <button>Adicionar ao Roteiro</button>
+      </div>
+
+      <a href="javascript:history.back()">← Voltar</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 MadeiraTrips</p>
+  </footer>
+</body>
+</html>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: var(--background-color);
+        color:var(--text-color);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .layout {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        min-height: 100vh;
+    }
+
+    .menu {
+        background-color: var(--cor-secundaria);
+        color: white;
+        padding: 1rem;
+    }
+
+    .menu details {
+        margin-bottom: 1rem;
+    }
+
+    .menu summary {
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .menu a {
+        display: block;
+        margin: 0.6rem;
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .content {
+        padding: 2rem;
+        background-color: lightgrey;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .card {
+        background-color: var(--card-background);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+
+    .header {
+        background-color: var(--cor-primaria);
+        color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+    .nav a:hover {
+        text-decoration: underline;
+    }
+
+    .footer {
+        background-color: var(--cor-primaria);
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* dark/light mode */
+    :root {
+        --background-color: white;
+        --text-color: black;
+        --cor-primaria: #2f5d2a;
+        --cor-secundaria: #407837;
+        --card-background: white;
+    }
+
+    body.dark {
+        --background-color: #524f4f;
+        --text-color: white;
+        --cor-primaria: #1b3b1a;
+        --cor-secundaria: #2f5d2a;
+        --card-background: yellow;
+    }
+
+    @media (width <= 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    order: 2;
+  }
+
+  .content {
+    order: 1;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+</style>
+
+</html>
