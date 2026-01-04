@@ -8,16 +8,16 @@
 </head>
 
 <body>
-
+    <!-- HEADER -->
     <header class="header">
-        <div class="logo">MadeiraTrips</div>
+        <a href="index.html" class="logo">MadeiraTrips</a>
         <nav class="nav">
             <a href="index.html">Início</a>
         </nav>
     </header>
 
     <main class="layout">
-
+        <!-- MENU -->
         <aside class="menu">
             <details open>
                 <summary>Geral</summary>
@@ -28,30 +28,75 @@
                 <a href="privacidade.html">Privacidade</a>
             </details>
         </aside>
-
+        <!-- cONTEÚDO -->
         <section class="content">
             <h1>Preferências</h1>
+    <p>Personalize a sua experiência na plataforma.</p>
 
-            <p>
-                Nesta página o utilizador pode definir preferências relacionadas
-                com o tipo de experiências, notificações e modo de visualização.
-            </p>
+    <section class="cards">
+        <article class="card">
+            <h3>Tipos de Experiências</h3>
 
-            <article class="card">
-                <p>• Preferência por trilhos, gastronomia ou cultura</p>
-                <p>• Ativar ou desativar notificações</p>
-                <p>• Escolha de tema claro ou escuro</p>
-            </article>
+            <label>
+                <input type="checkbox"> Gastronomia
+            </label><br>
+
+            <label>
+                <input type="checkbox"> Caminhadas
+            </label><br>
+
+            <label>
+                <input type="checkbox"> Cultura
+            </label>
+        </article>
+
+        <article class="card">
+            <h3>Região de Interesse</h3>
+
+            <select>
+                <option>Capital</option>
+                <option>Norte</option>
+                <option>Sul</option>
+                <option>Porto Santo</option>
+            </select>
+        </article>
+
+        <article class="card">
+            <h3>Notificações</h3>
+
+            <label>
+                <input type="checkbox"> Receber notificações por email
+            </label><br>
+
+            <label>
+                <input type="checkbox"> Receber sugestões personalizadas
+            </label>
+        </article>
+    </section>
+
+    <button>Guardar Preferências</button>
         </section>
 
     </main>
-
+    <!-- FOOTER -->
     <footer class="footer">
+        <nav>
+            <a href="sobre.html">Sobre</a>
+            <a href="contactos.html">Contactos</a>
+            <a href="ajuda.html">Ajuda</a>
+        </nav>
         <p>© 2026 MadeiraTrips</p>
     </footer>
 </body>
 
 <style>
+    .logo {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
     * {
         margin: 0;
         padding: 0;

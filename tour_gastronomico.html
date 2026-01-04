@@ -4,54 +4,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experiências - MadeiraTrips</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Tour Gastronómico - MadeiraTrips</title>
 </head>
 
 <body>
-   <!-- HEADER -->
+
+  <!-- HEADER -->
   <header class="header">
     <a href="index.html" class="logo">MadeiraTrips</a>
     <nav class="nav">
       <a href="index.html">Início</a>
       <a href="experiencias.html">Experiências</a>
-      <a href="login.html">Login</a>
+      <a href="favoritos.html">Favoritos</a>
+      <a href="carrinho.html">Carrinho</a>
     </nav>
   </header>
- <!-- MENU -->
+
+  <!-- LAYOUT -->
   <main class="layout">
+
+    <!-- MENU -->
     <aside class="menu">
-      <details>
-        <summary>Lugares</summary>
-        <a href="lugares_norte.html">Costa Norte</a>
-        <a href="lugares_sul.html">Costa Sul</a>
-        <a href="lugares_porto_santo.html">Porto Santo</a>
-        <a href="lugares_capital.html">Capital</a>
+      <details open>
+        <summary>Experiência</summary>
+        <a href="experiencias.html">Voltar às Experiências</a>
       </details>
     </aside>
- <!-- CONTEÚDO -->
-    <section class="content detalhe-experiencia">
-      <h1>Lugares - Porto Santo</h1>
 
-      <div class="card-grid">
-        <article class="card">
-          <h3>Praia de Porto Santo</h3>
-          <p>Praia dourada de 9 km.</p>
-          <a href="detalhe_porto_santo.html">Ver detalhes</a>
-        </article>
+    <!-- CONTEÚDO -->
+    <section class="content">
+      <h1>Tour Gastronómico</h1>
 
-        <article class="card">
-          <h3>Pico do Castelo</h3>
-          <p>Vista panorâmica da ilha.</p>
-          <a href="detalhe_pico_castelo.html">Ver detalhes</a>
-        </article>
-      </div>
+      <article class="card">
+        <p><strong>Duração:</strong> 3 horas</p>
+        <p><strong>Local:</strong> Funchal</p>
+        <p>
+          O tour gastronómico permite descobrir os sabores tradicionais
+          da Madeira, com visitas a restaurantes locais e provas de produtos regionais.
+        </p>
+        <p><strong>Inclui:</strong> Degustações e guia local</p>
+        <p><strong>Preço:</strong> 20€</p>
+      </article>
 
-
-      <a href="experiencias.html" class="btn-voltar">Voltar às experiencias</a>
     </section>
   </main>
- <!-- FOOTER -->
+
+  <!-- FOOTER -->
   <footer class="footer">
     <nav>
       <a href="sobre.html">Sobre</a>
@@ -60,7 +58,9 @@
     </nav>
     <p>© 2026 MadeiraTrips</p>
   </footer>
+
 </body>
+
 <style>
   .logo {
     color: white;
@@ -93,38 +93,20 @@
     padding: 1rem;
   }
 
-  .menu details {
-    margin-bottom: 1rem;
-  }
-
   .menu summary {
-    cursor: pointer;
     font-weight: bold;
   }
 
   .menu a {
     display: block;
     margin: 0.6rem;
-    text-decoration: none;
     color: white;
-  }
-
-  .menu a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    font-weight: bold;
+    text-decoration: none;
   }
 
   .content {
     padding: 2rem;
     background-color: lightgrey;
-  }
-
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 2rem;
   }
 
   .card {
@@ -133,48 +115,26 @@
     border-radius: 10px;
   }
 
-
-  .header {
+  .header,
+  .footer {
     background-color: var(--cor-primaria);
     color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 1rem;
+    text-align: center;
   }
 
   .nav a {
     color: white;
-    text-decoration: none;
     margin-left: 1rem;
+    text-decoration: none;
   }
 
-  .nav a:hover {
-    text-decoration: underline;
-  }
-
-  .footer {
-    background-color: var(--cor-primaria);
-    color: white;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  /* dark/light mode */
   :root {
     --background-color: white;
     --text-color: black;
     --cor-primaria: #2f5d2a;
     --cor-secundaria: #407837;
     --card-background: white;
-  }
-
-  body.dark {
-    --background-color: #524f4f;
-    --text-color: white;
-    --cor-primaria: #1b3b1a;
-    --cor-secundaria: #2f5d2a;
-    --card-background: yellow;
   }
 
   @media (width <=768px) {
@@ -188,10 +148,6 @@
 
     .content {
       order: 1;
-    }
-
-    .card-grid {
-      grid-template-columns: 1fr;
     }
 
     .nav {

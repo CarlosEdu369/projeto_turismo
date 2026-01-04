@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favoritos - MadeiraTrips</title>
+    <title>Observação de Golfinhos - MadeiraTrips</title>
 </head>
 
 <body>
@@ -24,36 +24,27 @@
         <!-- MENU -->
         <aside class="menu">
             <details open>
-                <summary>Favoritos</summary>
-                <a href="favoritos.html">Lista de Artigos</a>
-                <a href="roteiro.html">Criar Roteiro</a>
+                <summary>Experiência</summary>
+                <a href="experiencias.html">Voltar às Experiências</a>
             </details>
         </aside>
 
         <!-- CONTEÚDO -->
         <section class="content">
-            <h1>Meus Favoritos</h1>
+            <h1>Observação de Golfinhos</h1>
 
             <article class="card">
-                <h3>Levada do Caldeirão Verde</h3>
-                <p>Caminhada pedestre</p>
-                <p>Duração: 4 horas</p>
-                <button>Adicionar ao Carrinho</button>
+                <p><strong>Duração:</strong> 2 horas</p>
+                <p><strong>Local:</strong> Costa Sul da Madeira</p>
+                <p>
+                    Esta experiência permite observar golfinhos no seu habitat natural,
+                    acompanhados por guias especializados que explicam o comportamento
+                    e as características das espécies.
+                </p>
+                <p><strong>Preço:</strong> 50€</p>
+                <p><strong>Inclui:</strong> Passeio de barco e acompanhamento especializado</p>
             </article>
 
-            <article class="card">
-                <h3>Zona Velha do Funchal</h3>
-                <p>Experiência cultural</p>
-                <p>Duração: 2 horas</p>
-                <button>Adicionar ao Carrinho</button>
-            </article>
-
-            <article class="card">
-                <h3>Praia de Porto Santo</h3>
-                <p>Turismo balnear</p>
-                <p>Duração: Dia inteiro</p>
-                <button>Adicionar ao Carrinho</button>
-            </article>
         </section>
     </main>
 
@@ -68,6 +59,7 @@
     </footer>
 
 </body>
+
 <style>
     .logo {
         color: white;
@@ -100,10 +92,6 @@
         padding: 1rem;
     }
 
-    .menu details {
-        margin-bottom: 1rem;
-    }
-
     .menu summary {
         cursor: pointer;
         font-weight: bold;
@@ -112,14 +100,8 @@
     .menu a {
         display: block;
         margin: 0.6rem;
-        text-decoration: none;
         color: white;
-    }
-
-    .menu a:hover {
-        text-decoration: underline;
-        cursor: pointer;
-        font-weight: bold;
+        text-decoration: none;
     }
 
     .content {
@@ -127,62 +109,32 @@
         background-color: lightgrey;
     }
 
-    .card-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-        margin-top: 2rem;
-    }
-
     .card {
         background-color: var(--card-background);
         padding: 1rem;
         border-radius: 10px;
-        margin: 0.3rem;
     }
 
-
-    .header {
+    .header,
+    .footer {
         background-color: var(--cor-primaria);
         color: white;
-        padding: 1rem 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        padding: 1rem;
+        text-align: center;
     }
 
     .nav a {
         color: white;
-        text-decoration: none;
         margin-left: 1rem;
+        text-decoration: none;
     }
 
-    .nav a:hover {
-        text-decoration: underline;
-    }
-
-    .footer {
-        background-color: var(--cor-primaria);
-        color: white;
-        text-align: center;
-        padding: 1rem;
-    }
-
-    /* dark/light mode */
     :root {
         --background-color: white;
         --text-color: black;
         --cor-primaria: #2f5d2a;
         --cor-secundaria: #407837;
         --card-background: white;
-    }
-
-    body.dark {
-        --background-color: #524f4f;
-        --text-color: white;
-        --cor-primaria: #1b3b1a;
-        --cor-secundaria: #2f5d2a;
-        --card-background: yellow;
     }
 
     @media (width <=768px) {
@@ -196,10 +148,6 @@
 
         .content {
             order: 1;
-        }
-
-        .card-grid {
-            grid-template-columns: 1fr;
         }
 
         .nav {

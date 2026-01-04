@@ -8,16 +8,15 @@
 </head>
 
 <body>
-
+ <!-- HEADER -->
   <header class="header">
-    <div class="logo">MadeiraTrips</div>
+    <a href="index.html" class="logo">MadeiraTrips</a>
     <nav class="nav">
       <a href="index.html">Início</a>
     </nav>
   </header>
-
+ <!-- MENU -->
   <main class="layout">
-
     <aside class="menu">
       <details open>
         <summary>Geral</summary>
@@ -28,25 +27,59 @@
         <a href="privacidade.html">Privacidade</a>
       </details>
     </aside>
-
+ <!-- CONTEÚDO -->
     <section class="content">
-      <h1>Dados Pessoais</h1>
+  <h1>Dados Pessoais</h1>
+  <p>Informação pessoal associada à conta do utilizador.</p>
 
-      <article class="card">
-        <p>Nome: Utilizador Exemplo</p>
-        <p>Email: utilizador@email.com</p>
-        <p>Contacto: 9xxxxxxxx</p>
-      </article>
-    </section>
+  <article class="card">
+    <h3>Informação Biográfica</h3>
+    <p><strong>Nome:</strong> Utilizador Exemplo</p>
+    <p><strong>Data de Nascimento:</strong> 01/01/2000</p>
+    <p><strong>Nacionalidade:</strong> Portuguesa</p>
+  </article>
 
+  <article class="card">
+    <h3>Morada</h3>
+    <p><strong>Rua:</strong> Rua Exemplo, nº 10</p>
+    <p><strong>Código Postal:</strong> 9000-000</p>
+    <p><strong>Cidade:</strong> Funchal</p>
+    <p><strong>País:</strong> Portugal</p>
+  </article>
+
+  <article class="card">
+    <h3>Documentos de Identificação</h3>
+    <p><strong>Tipo:</strong> Cartão de Cidadão</p>
+    <p><strong>Número:</strong> 12345678</p>
+    <p><strong>Validade:</strong> 01/01/2030</p>
+  </article>
+
+  <article class="card">
+    <h3>Contactos</h3>
+    <p><strong>Email:</strong> utilizador@email.com</p>
+    <p><strong>Telemóvel:</strong> 9xxxxxxxx</p>
+  </article>
+</section>
   </main>
-
+ <!-- FOOTER -->
   <footer class="footer">
+    <nav>
+      <a href="sobre.html">Sobre</a>
+      <a href="contactos.html">Contactos</a>
+      <a href="ajuda.html">Ajuda</a>
+    </nav>
     <p>© 2026 MadeiraTrips</p>
   </footer>
 </body>
 
 <style>
+  .logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
   * {
     margin: 0;
     padding: 0;

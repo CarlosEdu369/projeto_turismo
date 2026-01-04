@@ -8,18 +8,17 @@
 </head>
 
 <body>
-
+ <!-- HEADER -->
     <header class="header">
-        <div class="logo">MadeiraTrips</div>
+        <a href="index.html" class="logo">MadeiraTrips</a>
         <nav class="nav">
             <a href="index.html">Início</a>
             <a href="favoritos.html">Favoritos</a>
             <a href="carrinho.html">Carrinho</a>
         </nav>
     </header>
-
+ <!-- MENU -->
     <main class="layout">
-
         <aside class="menu">
             <details open>
                 <summary>Geral</summary>
@@ -30,30 +29,49 @@
                 <a href="privacidade.html">Privacidade</a>
             </details>
         </aside>
-
+ <!-- CONTEÚDO -->
         <section class="content">
             <h1>Dashboard</h1>
-            <p>
-                Esta página apresenta um resumo geral da atividade do utilizador,
-                como favoritos guardados, roteiros criados e reservas recentes.
-            </p>
+    <p><strong>Bem-vindo à sua área pessoal.</strong></p>
 
-            <article class="card">
-                <h3>Resumo</h3>
-                <p>• Favoritos guardados</p>
-                <p>• Atividades no roteiro</p>
-                <p>• Últimas reservas</p>
-            </article>
-        </section>
+    <section class="cards">
+        <article class="card">
+            <h3>Roteiro</h3>
+            <p>Consulte e organize as suas atividades planeadas.</p>
+            <a href="roteiro.html">Ver Roteiro</a>
+        </article>
 
+        <article class="card">
+            <h3>Favoritos</h3>
+            <p>Veja os locais e experiências guardados.</p>
+            <a href="favoritos.html">Ver Favoritos</a>
+        </article>
+
+        <article class="card">
+            <h3>Notificações</h3>
+            <p>Acompanhe novidades e atualizações.</p>
+            <a href="notificacoes.html">Ver Notificações</a>
+        </article>
+    </section>
     </main>
-
+ <!-- HEADER -->
     <footer class="footer">
+        <nav>
+            <a href="sobre.html">Sobre</a>
+            <a href="contactos.html">Contactos</a>
+            <a href="ajuda.html">Ajuda</a>
+        </nav>
         <p>© 2026 MadeiraTrips</p>
     </footer>
 </body>
-
 <style>
+    .logo {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
     * {
         margin: 0;
         padding: 0;

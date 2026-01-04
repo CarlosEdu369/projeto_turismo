@@ -10,15 +10,16 @@
 <body>
     <div class="autenticar">
         <h2>Login</h2>
-        <form>
+        <form action="index.html" method="get">
             <label>Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Email@exemplo.com">
+            <input type="email" id="email" name="email" required placeholder="Email@exemplo.com" class="user-valid">
 
             <label>Password:</label>
             <input type="password" id="password" name="password" required minlength="6"
-                placeholder="Mínimo 6 caracteres">
-
-            <button type="submit" onclick="location.href='index.html'">Entrar</button>
+                placeholder="Mínimo 6 caracteres" class="user-invalid">
+            <a href="index.html"></a>
+            <button type="submit">Entrar</button>
+            </a>
         </form>
 
         <hr>
@@ -26,15 +27,15 @@
         <h2>Registo</h2>
         <form>
             <label>Email:</label>
-            <input type="email" id="new-email" name="new-email" required placeholder="Email@exemplo.com">
+            <input type="email" id="new-email" name="new-email" required placeholder="Email@exemplo.com" class="user-valid">
 
             <label>Password:</label>
             <input type="password" id="new-password" name="new-password" required minlength="6"
-                placeholder="Mínimo 6 caracteres">
+                placeholder="Mínimo 6 caracteres" class="user-valid">
 
             <label>Confirmar Password:</label>
             <input type="password" id="confirm-password" name="confirm-password" required minlength="6"
-                placeholder="Reescreve a password">
+                placeholder="Reescreve a password" class="user-invalid">
 
             <button type="submit">Registar</button>
         </form>
@@ -58,7 +59,13 @@
         }
     }
 
+    .user-valid {
+        border: 2px solid var(--cor-valida);
+    }
 
+    .user-invalid {
+        border: 2px solid var(--cor-invalida);
+    }
 
 
 

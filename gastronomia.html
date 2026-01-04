@@ -1,85 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalhe do Lugar - MadeiraTrips</title>
+    <meta charset="UTF-8">
+    <title>Gastronomia - MadeiraTrips</title>
 </head>
 
 <body>
-   <!-- HEADER -->
-  <header class="header">
-    <a href="index.html" class="logo">MadeiraTrips</a>
-    <nav class="nav">
-      <a href="index.html">Início</a>
-      <a href="experiencias.html">Experiências</a>
-    </nav>
-  </header>
+     <!-- HEADER -->
+    <header class="header">
+       <a href="index.html" class="logo">MadeiraTrips</a>
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="experiencias.html">Experiências</a>
+        </nav>
+    </header>
  <!-- MENU -->
-  <main class="layout">
-    <aside class="menu">
-      <details open>
-        <summary>Lugares</summary>
-        <a href="lugares-costa-norte.html">Costa Norte</a>
-        <a href="lugares-costa-sul.html">Costa Sul</a>
-        <a href="lugares-capital.html">Capital</a>
-        <a href="lugares-porto-santo.html">Porto Santo</a>
-      </details>
-    </aside>
+    <main class="layout">
+        <aside class="menu">
+            <details open>
+                <summary>Gastronomia</summary>
+                <a href="index.html">Voltar</a>
+            </details>
+        </aside>
  <!-- CONTEÚDO -->
-    <section class="content">
-      <h1>Zona Velha do Funchal</h1>
+        <section class="content">
+            <h1>Experiências Gastronómicas</h1>
 
-<p><strong>Destaques:</strong> centro histórico, arte urbana</p>
+            <article class="card">
+                <h3>Mercado dos Lavradores</h3>
+                <p>Produtos regionais e sabores tradicionais.</p>
+                <a href="detalhe_mercado_lavradores.html">
+                    <button>Ver Detalhes</button>
+                </a>
+            </article>
 
-<p>
-  A Zona Velha do Funchal é o centro histórico da cidade, conhecida pelas suas
-  ruas antigas, arte urbana e oferta cultural.
-</p>
-
-<ul>
-  <li>Localização: Funchal</li>
-  <li>Centro histórico</li>
-  <li>Restaurantes e bares</li>
-  <li>Zona cultural</li>
-  <li><strong>Preço:</strong> 15€</li>
-</ul>
-
-      <div class="acoes">
-        <button>Adicionar aos Favoritos</button>
-        <button>Adicionar ao Roteiro</button>
-      </div>
-
-      <a href="lista.html">← Voltar</a>
-    </section>
-  </main>
+            <article class="card">
+                <h3>Tour Gastronómico</h3>
+                <p>Degustação de pratos típicos da Madeira.</p>
+                <a href="tour_gastronomico.html">
+                    <button>Ver Detalhes</button>
+                </a>
+            </article>
+        </section>
+    </main>
  <!-- FOOTER -->
-  <footer class="footer">
-    <nav>
-      <a href="sobre.html">Sobre</a>
-      <a href="contactos.html">Contactos</a>
-      <a href="ajuda.html">Ajuda</a>
-    </nav>
-    <p>© 2026 MadeiraTrips</p>
-  </footer>
+    <footer class="footer">
+        <nav>
+            <a href="sobre.html">Sobre</a>
+            <a href="contactos.html">Contactos</a>
+            <a href="ajuda.html">Ajuda</a>
+        </nav>
+        <p>© 2026 MadeiraTrips</p>
+    </footer>
 </body>
-</html>
 <style>
-  .logo {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
+    .logo {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
-    body{
+    body {
         background-color: var(--background-color);
-        color:var(--text-color);
+        color: var(--text-color);
         font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -133,6 +124,7 @@
         background-color: var(--card-background);
         padding: 1rem;
         border-radius: 10px;
+        margin: 0.3rem;
     }
 
 
@@ -179,27 +171,27 @@
         --card-background: yellow;
     }
 
-    @media (width <= 768px) {
-  .layout {
-    grid-template-columns: 1fr;
-  }
+    @media (width <=768px) {
+        .layout {
+            grid-template-columns: 1fr;
+        }
 
-  .menu {
-    order: 2;
-  }
+        .menu {
+            order: 2;
+        }
 
-  .content {
-    order: 1;
-  }
+        .content {
+            order: 1;
+        }
 
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
+        .card-grid {
+            grid-template-columns: 1fr;
+        }
 
-  .nav {
-    display: none;
-  }
-}
+        .nav {
+            display: none;
+        }
+    }
 </style>
 
 </html>

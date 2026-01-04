@@ -8,14 +8,15 @@
 </head>
 
 <body>
+   <!-- HEADER -->
   <header class="header">
-    <div class="logo">MadeiraTrips</div>
+    <a href="index.html" class="logo">MadeiraTrips</a>
     <nav class="nav">
       <a href="index.html">Início</a>
       <a href="experiencias.html">Experiências</a>
     </nav>
   </header>
-
+ <!-- Menu -->
   <main class="layout">
     <aside class="menu">
       <details open>
@@ -26,7 +27,7 @@
         <a href="lugares_capital.html">Capital</a>
       </details>
     </aside>
-
+     <!-- CONTEÚDO -->
     <section class="content">
       <h1>Levada do Caldeirão Verde</h1>
 
@@ -42,24 +43,37 @@
         <li>Duração: 4 horas</li>
         <li>Dificuldade: Média</li>
         <li>Inclui trilho pedestre</li>
+        <li>Preço: 25€</li>
       </ul>
 
       <div class="acoes">
-        <button onclick="location.href='favoritos.html'">Adicionar aos Favoritos</button>
+        <button>Adicionar aos Favoritos</button>
         <button>Adicionar ao Roteiro</button>
       </div>
 
       <a href="lista.html">← Voltar</a>
     </section>
   </main>
-
+ <!-- FOOTER -->
   <footer class="footer">
+    <nav>
+      <a href="sobre.html">Sobre</a>
+      <a href="contactos.html">Contactos</a>
+      <a href="ajuda.html">Ajuda</a>
+    </nav>
     <p>© 2026 MadeiraTrips</p>
   </footer>
 </body>
 
 </html>
 <style>
+  .logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
   * {
     margin: 0;
     padding: 0;
