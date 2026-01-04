@@ -4,61 +4,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalhe do Lugar - MadeiraTrips</title>
+  <title>Roteiro - MadeiraTrips</title>
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <div class="logo">MadeiraTrips</div>
     <nav class="nav">
       <a href="index.html">Início</a>
-      <a href="experiencias.html">Experiências</a>
+      <a href="favoritos.html">Favoritos</a>
+      <a href="roteiro.html">Roteiro</a>
+      <a href="carrinho.html">Carrinho</a>
     </nav>
   </header>
 
+  <!-- LAYOUT -->
   <main class="layout">
+
+    <!-- MENU -->
     <aside class="menu">
       <details open>
-        <summary>Lugares</summary>
-        <a href="lugares_norte.html">Costa Norte</a>
-        <a href="lugares_sul.html">Costa Sul</a>
-        <a href="lugares_porto_santo.html">Porto Santo</a>
-        <a href="lugares_capital.html">Capital</a>
+        <summary>Roteiro</summary>
+        <a href="roteiro.html">Atividades a Realizar</a>
+        <a href="roteiro_arquivo.html">Arquivo de Atividades</a>
       </details>
     </aside>
 
+    <!-- CONTEÚDO -->
     <section class="content">
-      <h1>Câmara de Lobos</h1>
+      <h1>Atividades a Realizar</h1>
 
-      <p><strong>Destaques:</strong> vila piscatória, mar, tradição</p>
+      <article class="card">
+        <h3>Levada do Caldeirão Verde</h3>
+        <p>Duração: 4 horas</p>
+        <p>Incluído no roteiro</p>
+        <a href="detalhe_caldeirao.html">
+          <button>Ver Detalhes</button>
+        </a>
+      </article>
 
-      <p>
-        Câmara de Lobos é uma vila piscatória tradicional, conhecida pelo seu porto
-        natural e pela forte ligação à cultura marítima.
-      </p>
+      <article class="card">
+        <h3>Zona Velha do Funchal</h3>
+        <p>Duração: 2 horas</p>
+        <p>Incluído no roteiro</p>
+        <a href="detalhe_zona_velha.html">
+          <button>Ver Detalhes</button>
+        </a>
+      </article>
 
-      <ul>
-        <li>Localização: Costa Sul</li>
-        <li>Tipo: Vila costeira</li>
-        <li>Vista marítima</li>
-        <li>Restaurantes típicos</li>
-      </ul>
+      <hr>
 
-      <div class="acoes">
-        <button onclick="location.href='favoritos.html'">Adicionar aos Favoritos</button>
-        <button>Adicionar ao Roteiro</button>
-      </div>
+      <p><strong>Total de atividades:</strong> 2</p>
 
-      <a href="lista.html">← Voltar</a>
     </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <p>© 2026 MadeiraTrips</p>
   </footer>
-</body>
 
-</html>
+</body>
 <style>
   * {
     margin: 0;
@@ -122,6 +131,7 @@
     background-color: var(--card-background);
     padding: 1rem;
     border-radius: 10px;
+    margin: 0.3rem;
   }
 
 

@@ -3,60 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalhe do Lugar - MadeiraTrips</title>
+  <title>Página não encontrada - MadeiraTrips</title>
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <div class="logo">MadeiraTrips</div>
     <nav class="nav">
       <a href="index.html">Início</a>
-      <a href="experiencias.html">Experiências</a>
     </nav>
   </header>
 
+  <!-- LAYOUT PRINCIPAL -->
   <main class="layout">
+
+    <!-- MENU LATERAL -->
     <aside class="menu">
       <details open>
-        <summary>Lugares</summary>
-        <a href="lugares-costa-norte.html">Costa Norte</a>
-        <a href="lugares-costa-sul.html">Costa Sul</a>
-        <a href="lugares-capital.html">Capital</a>
-        <a href="lugares-porto-santo.html">Porto Santo</a>
+        <summary>Ajuda</summary>
+        <a href="index.html">Voltar ao Início</a>
       </details>
     </aside>
 
+    <!-- CONTEÚDO -->
     <section class="content">
-      <h1>Santana</h1>
+      <h1>Erro 404</h1>
+      <h2>Página não encontrada</h2>
 
-<p><strong>Destaques:</strong> casas típicas, cultura, tradição</p>
+      <p>
+        A página que tentou aceder não existe ou foi removida.
+      </p>
 
-<p>
-  Santana é conhecida pelas suas casas tradicionais de colmo, sendo um dos
-  símbolos culturais mais importantes da ilha da Madeira.
-</p>
-
-<ul>
-  <li>Localização: Costa Norte</li>
-  <li>Tipo: Património cultural</li>
-  <li>Acesso fácil</li>
-  <li>Zona turística</li>
-</ul>
-
-      <div class="acoes">
-        <button onclick="location.href='favoritos.html'">Adicionar aos Favoritos</button>
-        <button>Adicionar ao Roteiro</button>
-      </div>
-
-      <a href="lista.html">← Voltar</a>
+      <p>
+        Utilize o menu lateral ou volte à página inicial.
+      </p>
     </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <p>© 2026 MadeiraTrips</p>
   </footer>
+
 </body>
-</html>
+
 <style>
     * {
         margin: 0;
@@ -122,7 +115,6 @@
         border-radius: 10px;
     }
 
-
     .header {
         background-color: var(--cor-primaria);
         color: white;
@@ -149,7 +141,6 @@
         padding: 1rem;
     }
 
-    /* dark/light mode */
     :root {
         --background-color: white;
         --text-color: black;
@@ -167,26 +158,26 @@
     }
 
     @media (width <= 768px) {
-  .layout {
-    grid-template-columns: 1fr;
-  }
+      .layout {
+        grid-template-columns: 1fr;
+      }
 
-  .menu {
-    order: 2;
-  }
+      .menu {
+        order: 2;
+      }
 
-  .content {
-    order: 1;
-  }
+      .content {
+        order: 1;
+      }
 
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
 
-  .nav {
-    display: none;
-  }
-}
+      .nav {
+        display: none;
+      }
+    }
 </style>
 
 </html>

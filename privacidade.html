@@ -4,53 +4,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalhe do Lugar - MadeiraTrips</title>
+  <title>Privacidade - MadeiraTrips</title>
 </head>
 
 <body>
+
   <header class="header">
     <div class="logo">MadeiraTrips</div>
     <nav class="nav">
       <a href="index.html">Início</a>
-      <a href="experiencias.html">Experiências</a>
     </nav>
   </header>
 
   <main class="layout">
+
     <aside class="menu">
       <details open>
-        <summary>Lugares</summary>
-        <a href="lugares_norte.html">Costa Norte</a>
-        <a href="lugares_sul.html">Costa Sul</a>
-        <a href="lugares_porto_santo.html">Porto Santo</a>
-        <a href="lugares_capital.html">Capital</a>
+        <summary>Geral</summary>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="notificacoes.html">Notificações</a>
+        <a href="preferencias.html">Preferências</a>
+        <a href="dados_pessoais.html">Dados Pessoais</a>
+        <a href="privacidade.html">Privacidade</a>
       </details>
     </aside>
 
     <section class="content">
-      <h1>Câmara de Lobos</h1>
-
-      <p><strong>Destaques:</strong> vila piscatória, mar, tradição</p>
+      <h1>Privacidade</h1>
 
       <p>
-        Câmara de Lobos é uma vila piscatória tradicional, conhecida pelo seu porto
-        natural e pela forte ligação à cultura marítima.
+        Esta página informa o utilizador sobre a forma como
+        os seus dados são utilizados e protegidos.
       </p>
 
-      <ul>
-        <li>Localização: Costa Sul</li>
-        <li>Tipo: Vila costeira</li>
-        <li>Vista marítima</li>
-        <li>Restaurantes típicos</li>
-      </ul>
-
-      <div class="acoes">
-        <button onclick="location.href='favoritos.html'">Adicionar aos Favoritos</button>
-        <button>Adicionar ao Roteiro</button>
-      </div>
-
-      <a href="lista.html">← Voltar</a>
+      <article class="card">
+        <p>• Proteção de dados pessoais</p>
+        <p>• Utilização de cookies</p>
+        <p>• Direitos do utilizador</p>
+      </article>
     </section>
+
   </main>
 
   <footer class="footer">
@@ -58,7 +51,6 @@
   </footer>
 </body>
 
-</html>
 <style>
   * {
     margin: 0;
@@ -111,19 +103,13 @@
     background-color: lightgrey;
   }
 
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
-
   .card {
     background-color: var(--card-background);
     padding: 1rem;
     border-radius: 10px;
+    margin-bottom: 1rem;
+    margin: 0.3rem;
   }
-
 
   .header {
     background-color: var(--cor-primaria);
@@ -151,7 +137,6 @@
     padding: 1rem;
   }
 
-  /* dark/light mode */
   :root {
     --background-color: white;
     --text-color: black;
@@ -179,10 +164,6 @@
 
     .content {
       order: 1;
-    }
-
-    .card-grid {
-      grid-template-columns: 1fr;
     }
 
     .nav {

@@ -3,60 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalhe do Lugar - MadeiraTrips</title>
+  <title>Inspiração - MadeiraTrips</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <div class="logo">MadeiraTrips</div>
     <nav class="nav">
       <a href="index.html">Início</a>
       <a href="experiencias.html">Experiências</a>
+      <a href="favoritos.html">Favoritos</a>
+      <a href="carrinho.html">Carrinho</a>
     </nav>
   </header>
 
+  <!-- LAYOUT -->
   <main class="layout">
+
+    <!-- MENU -->
     <aside class="menu">
       <details open>
+        <summary>Inspiração</summary>
+        <a href="inspiracao.html">Todas Categorias</a>
+      </details>
+      <details>
         <summary>Lugares</summary>
-        <a href="lugares-costa-norte.html">Costa Norte</a>
-        <a href="lugares-costa-sul.html">Costa Sul</a>
-        <a href="lugares-capital.html">Capital</a>
-        <a href="lugares-porto-santo.html">Porto Santo</a>
+        <a href="lugares_norte.html">Costa Norte</a>
+        <a href="lugares_sul.html">Costa Sul</a>
+        <a href="lugares_porto_santo.html">Porto Santo</a>
+        <a href="lugares_capital.html">Capital</a>
       </details>
     </aside>
 
+    <!-- CONTEÚDO -->
     <section class="content">
-      <h1>Santana</h1>
+  <h1>Inspiração</h1>
+  <p>Explora ideias e sugestões para aproveitares o melhor da Madeira.</p>
 
-<p><strong>Destaques:</strong> casas típicas, cultura, tradição</p>
+  <div class="card-grid">
 
-<p>
-  Santana é conhecida pelas suas casas tradicionais de colmo, sendo um dos
-  símbolos culturais mais importantes da ilha da Madeira.
-</p>
+    <article class="card">
+      <h3>Tendências</h3>
+      <p>Descobre o que está em destaque entre os visitantes da ilha.</p>
+      <a href="pagina_erro.html">Ver mais</a>
+    </article>
 
-<ul>
-  <li>Localização: Costa Norte</li>
-  <li>Tipo: Património cultural</li>
-  <li>Acesso fácil</li>
-  <li>Zona turística</li>
-</ul>
+    <article class="card">
+      <h3>Melhores Lugares a Visitar</h3>
+      <p>Os locais mais recomendados para conhecer na Madeira.</p>
+      <a href="lugares_norte.html">Ver mais</a>
+    </article>
 
-      <div class="acoes">
-        <button onclick="location.href='favoritos.html'">Adicionar aos Favoritos</button>
-        <button>Adicionar ao Roteiro</button>
-      </div>
+    <article class="card">
+      <h3>Festas e Arraiais</h3>
+      <p>Eventos tradicionais e celebrações populares.</p>
+      <a href="pagina_erro.html">Ver mais</a>
+    </article>
 
-      <a href="lista.html">← Voltar</a>
-    </section>
+    <article class="card">
+      <h3>Gastronomia</h3>
+      <p>Sabores típicos e experiências gastronómicas únicas.</p>
+      <a href="detalhe_mercado_lavradores.html">Ver mais</a>
+    </article>
+
+    <article class="card">
+      <h3>Trilhos e Levadas</h3>
+      <p>Caminhadas inesquecíveis pela natureza da ilha.</p>
+      <a href="detalhe_caldeirao.html">Ver mais</a>
+    </article>
+
+    <article class="card">
+      <h3>Natureza</h3>
+      <p>Paisagens naturais, jardins e áreas protegidas.</p>
+      <a href="detalhe_jardim_botanico.html">Ver mais</a>
+    </article>
+
+    <article class="card">
+      <h3>Cultura</h3>
+      <p>Tradições, história e património cultural.</p>
+      <a href="detalhe_zona_velha.html">Ver mais</a>
+    </article>
+
+    <article class="card">
+      <h3>Desportos</h3>
+      <p>Atividades desportivas e de aventura na Madeira.</p>
+      <a href="pagina_erro.html">Ver mais</a>
+    </article>
+
+  </div>
+</section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
+    <nav>
+      <a href="sobre.html">Sobre</a>
+      <a href="contactos.html">Contactos</a>
+      <a href="ajuda.html">Ajuda</a>
+    </nav>
     <p>© 2026 MadeiraTrips</p>
   </footer>
+
 </body>
-</html>
 <style>
     * {
         margin: 0;
@@ -120,6 +171,7 @@
         background-color: var(--card-background);
         padding: 1rem;
         border-radius: 10px;
+        margin:0.3rem;
     }
 
 
@@ -188,5 +240,4 @@
   }
 }
 </style>
-
 </html>

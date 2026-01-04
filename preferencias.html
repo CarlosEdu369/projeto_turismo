@@ -1,62 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalhe do Lugar - MadeiraTrips</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferências - MadeiraTrips</title>
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo">MadeiraTrips</div>
-    <nav class="nav">
-      <a href="index.html">Início</a>
-      <a href="experiencias.html">Experiências</a>
-    </nav>
-  </header>
 
-  <main class="layout">
-    <aside class="menu">
-      <details open>
-        <summary>Lugares</summary>
-        <a href="lugares-costa-norte.html">Costa Norte</a>
-        <a href="lugares-costa-sul.html">Costa Sul</a>
-        <a href="lugares-capital.html">Capital</a>
-        <a href="lugares-porto-santo.html">Porto Santo</a>
-      </details>
-    </aside>
+    <header class="header">
+        <div class="logo">MadeiraTrips</div>
+        <nav class="nav">
+            <a href="index.html">Início</a>
+        </nav>
+    </header>
 
-    <section class="content">
-      <h1>Santana</h1>
+    <main class="layout">
 
-<p><strong>Destaques:</strong> casas típicas, cultura, tradição</p>
+        <aside class="menu">
+            <details open>
+                <summary>Geral</summary>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="notificacoes.html">Notificações</a>
+                <a href="preferencias.html">Preferências</a>
+                <a href="dados_pessoais.html">Dados Pessoais</a>
+                <a href="privacidade.html">Privacidade</a>
+            </details>
+        </aside>
 
-<p>
-  Santana é conhecida pelas suas casas tradicionais de colmo, sendo um dos
-  símbolos culturais mais importantes da ilha da Madeira.
-</p>
+        <section class="content">
+            <h1>Preferências</h1>
 
-<ul>
-  <li>Localização: Costa Norte</li>
-  <li>Tipo: Património cultural</li>
-  <li>Acesso fácil</li>
-  <li>Zona turística</li>
-</ul>
+            <p>
+                Nesta página o utilizador pode definir preferências relacionadas
+                com o tipo de experiências, notificações e modo de visualização.
+            </p>
 
-      <div class="acoes">
-        <button onclick="location.href='favoritos.html'">Adicionar aos Favoritos</button>
-        <button>Adicionar ao Roteiro</button>
-      </div>
+            <article class="card">
+                <p>• Preferência por trilhos, gastronomia ou cultura</p>
+                <p>• Ativar ou desativar notificações</p>
+                <p>• Escolha de tema claro ou escuro</p>
+            </article>
+        </section>
 
-      <a href="lista.html">← Voltar</a>
-    </section>
-  </main>
+    </main>
 
-  <footer class="footer">
-    <p>© 2026 MadeiraTrips</p>
-  </footer>
+    <footer class="footer">
+        <p>© 2026 MadeiraTrips</p>
+    </footer>
 </body>
-</html>
+
 <style>
     * {
         margin: 0;
@@ -64,9 +58,9 @@
         box-sizing: border-box;
     }
 
-    body{
+    body {
         background-color: var(--background-color);
-        color:var(--text-color);
+        color: var(--text-color);
         font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -109,19 +103,12 @@
         background-color: lightgrey;
     }
 
-    .card-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-        margin-top: 2rem;
-    }
-
     .card {
         background-color: var(--card-background);
         padding: 1rem;
         border-radius: 10px;
+        margin-bottom: 1rem;
     }
-
 
     .header {
         background-color: var(--cor-primaria);
@@ -149,7 +136,6 @@
         padding: 1rem;
     }
 
-    /* dark/light mode */
     :root {
         --background-color: white;
         --text-color: black;
@@ -166,27 +152,23 @@
         --card-background: yellow;
     }
 
-    @media (width <= 768px) {
-  .layout {
-    grid-template-columns: 1fr;
-  }
+    @media (width <=768px) {
+        .layout {
+            grid-template-columns: 1fr;
+        }
 
-  .menu {
-    order: 2;
-  }
+        .menu {
+            order: 2;
+        }
 
-  .content {
-    order: 1;
-  }
+        .content {
+            order: 1;
+        }
 
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .nav {
-    display: none;
-  }
-}
+        .nav {
+            display: none;
+        }
+    }
 </style>
 
 </html>

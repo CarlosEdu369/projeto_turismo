@@ -3,60 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalhe do Lugar - MadeiraTrips</title>
+  <title>Notificações - MadeiraTrips</title>
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <div class="logo">MadeiraTrips</div>
     <nav class="nav">
       <a href="index.html">Início</a>
-      <a href="experiencias.html">Experiências</a>
+      <a href="notificacoes.html">Notificações</a>
     </nav>
   </header>
 
+  <!-- LAYOUT PRINCIPAL -->
   <main class="layout">
+
+    <!-- MENU LATERAL -->
     <aside class="menu">
       <details open>
-        <summary>Lugares</summary>
-        <a href="lugares-costa-norte.html">Costa Norte</a>
-        <a href="lugares-costa-sul.html">Costa Sul</a>
-        <a href="lugares-capital.html">Capital</a>
-        <a href="lugares-porto-santo.html">Porto Santo</a>
+        <summary>Notificações</summary>
+        <a href="carrinho.html">Pagamentos</a>
       </details>
     </aside>
 
+    <!-- CONTEÚDO -->
     <section class="content">
-      <h1>Santana</h1>
 
-<p><strong>Destaques:</strong> casas típicas, cultura, tradição</p>
+      <h1>Notificações</h1>
+      <p>Aqui podes acompanhar as notificações relacionadas com a tua conta.</p>
 
-<p>
-  Santana é conhecida pelas suas casas tradicionais de colmo, sendo um dos
-  símbolos culturais mais importantes da ilha da Madeira.
-</p>
+      <article class="card" id="pagamentos">
+        <h3>Pagamentos</h3>
+        <p>Pagamento confirmado para a atividade “Levada do Caldeirão Verde”.</p>
+        <p>Estado: Concluído</p>
+      </article>
 
-<ul>
-  <li>Localização: Costa Norte</li>
-  <li>Tipo: Património cultural</li>
-  <li>Acesso fácil</li>
-  <li>Zona turística</li>
-</ul>
+      <article class="card" id="atividades">
+        <h3>Atividades</h3>
+        <p>A atividade “Observação de Golfinhos” foi adicionada ao teu roteiro.</p>
+        <p>Data: 12 de janeiro</p>
+      </article>
 
-      <div class="acoes">
-        <button onclick="location.href='favoritos.html'">Adicionar aos Favoritos</button>
-        <button>Adicionar ao Roteiro</button>
-      </div>
+      <article class="card" id="updates">
+        <h3>Updates</h3>
+        <p>Nova experiência gastronómica disponível na zona sul.</p>
+        <p>Consulta a secção de experiências para mais detalhes.</p>
+      </article>
 
-      <a href="lista.html">← Voltar</a>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <p>© 2026 MadeiraTrips</p>
   </footer>
+
 </body>
-</html>
 <style>
     * {
         margin: 0;
@@ -109,19 +113,12 @@
         background-color: lightgrey;
     }
 
-    .card-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-        margin-top: 2rem;
-    }
-
     .card {
         background-color: var(--card-background);
         padding: 1rem;
         border-radius: 10px;
+        margin-bottom: 1rem;
     }
-
 
     .header {
         background-color: var(--cor-primaria);
@@ -149,7 +146,6 @@
         padding: 1rem;
     }
 
-    /* dark/light mode */
     :root {
         --background-color: white;
         --text-color: black;
@@ -167,26 +163,22 @@
     }
 
     @media (width <= 768px) {
-  .layout {
-    grid-template-columns: 1fr;
-  }
+      .layout {
+        grid-template-columns: 1fr;
+      }
 
-  .menu {
-    order: 2;
-  }
+      .menu {
+        order: 2;
+      }
 
-  .content {
-    order: 1;
-  }
+      .content {
+        order: 1;
+      }
 
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .nav {
-    display: none;
-  }
-}
+      .nav {
+        display: none;
+      }
+    }
 </style>
 
 </html>
